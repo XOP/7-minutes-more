@@ -1,0 +1,168 @@
+/* Menu
+---------------------------------------------------------------------------------- */
+
+/*
+    todo: svg icons
+*/
+
+
+/*
+cssg
+
+	menu                            __active
+	    menu_icon
+
+	    menu_content
+	        menu_list
+	            menu_item +
+	                menu_link
+	                    menu_link_text
+	                        ...
+
+*/
+
+
+/* Vars
+-------------------------------------------------- */
+
+@import "../../../css/variables";
+
+
+/* /Vars */
+
+
+/* Layout
+-------------------------------------------------- */
+
+.menu {
+    @include cover();
+    right: 10%;
+
+    display: none;
+
+    background: $tr-bg;
+    box-shadow: $sh-heavy;
+
+    &.__active {
+        display: flex;
+        flex-direction: row;
+        order: -1;
+        }
+
+    @media #{$media-m} {
+        position: relative;
+        right: auto;
+
+        box-shadow: none;
+        }
+	}
+
+.menu_content {
+    flex: 1 0 100%;
+    display: flex;
+    }
+
+/* /Layout */
+
+
+/* List
+-------------------------------------------------- */
+
+.menu_list {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: outside none;
+    }
+
+/* /List */
+
+
+/* Item
+-------------------------------------------------- */
+
+.menu_item {
+    flex: 1 0 100%;
+    display: flex;
+    }
+
+.menu_link {
+    flex: 1 0 100%;
+    display: flex;
+
+    padding: $grid-2;
+
+    color: $c-lighter;
+    text-decoration: none;
+    font-size: $fs-menu;
+    white-space: nowrap;
+
+    &:hover {
+        color: $c-lightest;
+        background: $c-brand-dark;
+        }
+
+    //
+    // Mods
+
+    &.__new {
+        .menu_link_text {
+            &:before {
+                content: "new";
+                }
+            }
+        }
+
+    &.__library {
+        .menu_link_text {
+            &:before {
+                content: "lib";
+                }
+            }
+        }
+
+    &.__programs {
+        .menu_link_text {
+            &:before {
+                content: "pro";
+                }
+            }
+        }
+
+    &.__settings {
+        .menu_link_text {
+            &:before {
+                content: "•";
+                }
+            }
+        }
+    }
+
+.menu_link_text {
+    align-self: center;
+
+    &:before {
+        font-size: $fs-s;
+
+        display: inline-block;
+        vertical-align: .4rem;
+
+        width: $fs-menu;
+        height: $fs-menu;
+        border: .2rem solid $c-lighter;
+        border-radius: $fs-menu;
+
+        line-height: $fs-menu;
+        text-align: center;
+        }
+    }
+
+/* /Item */
+
+/* /Menu
+---------------------------------------------------------------------------------- */

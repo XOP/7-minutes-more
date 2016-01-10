@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{%= o.webpackConfig.locale.title %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <style>
+        #app {
+            display: none;
+            }
+    </style>
+
+    {% if (o.webpackConfig.debug != true) { %}
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="bundle.css"/>
+    {% } %}
+</head>
+<body>
+
+<div class="root">
+
+    <!-- Content start -->
+    <div class="main js-main">
+        <div class="container">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid asperiores at atque commodi eaque illo in laboriosam libero odio possimus quae quam quis recusandae saepe sequi sit, soluta velit!
+        </div>
+    </div>
+    <!-- Content end -->
+
+    <!-- Menu start -->
+    <div class="menu js-menu __active">
+        <div class="menu_icon js-menu-trigger"></div>
+        <div class="menu_content">
+            <ul class="menu_list">
+                <li class="menu_item">
+                    <a href="#new" class="menu_link __new">
+                        <span class="menu_link_text">
+                            {%= o.webpackConfig.locale.menu.new %}
+                        </span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#library" class="menu_link __library">
+                        <span class="menu_link_text">
+                            {%= o.webpackConfig.locale.menu.library %}
+                        </span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#programs" class="menu_link __programs">
+                        <span class="menu_link_text">
+                            {%= o.webpackConfig.locale.menu.programs %}
+                        </span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="#settings" class="menu_link __settings">
+                        <span class="menu_link_text">
+                            {%= o.webpackConfig.locale.menu.settings %}
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Menu end -->
+
+</div>
+
+<div class="root" id="app">
+    {%= o.webpackConfig.locale.loading %}
+</div>
+
+<script src="bundle.js"></script>
+
+</body>
+</html>

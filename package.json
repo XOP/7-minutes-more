@@ -1,0 +1,69 @@
+{
+  "name": "7-minutes-more",
+  "version": "0.1.0",
+  "description": "Hybrid fitness application",
+  "main": "assets/app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XOP/7-minutes-more.git"
+  },
+  "keywords": [
+    "hybrid",
+    "hybrid-app",
+    "application",
+    "react",
+    "fitness"
+  ],
+  "author": "Evgeny Khoroshilov <stewiekillsloiss@gmail.com> (https://github.com/XOP)",
+  "bugs": {
+    "url": "https://github.com/XOP/7-minutes-more/issues"
+  },
+  "homepage": "https://github.com/XOP/7-minutes-more#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "scripts": {
+    "test": "babel-node assets/tests.js",
+    "cleanup": "rm -rf public && mkdir public",
+    "favicon": "cp favicon.ico public",
+    "build": "npm run cleanup && npm run favicon && NODE_ENV=production webpack -p",
+    "serve": "webpack-dev-server --content-base public"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "redux": "^3.0.5",
+    "xop-module-utils": "^0.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "css-loader": "^0.23.0",
+    "cssnano": "^3.3.2",
+    "deep-freeze": "0.0.1",
+    "eslint": "^1.10.2",
+    "eslint-config-xop": "^1.1.3",
+    "eslint-loader": "^1.1.1",
+    "eslint-plugin-react": "^3.11.1",
+    "expect": "^1.13.3",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "html-webpack-plugin": "^1.7.0",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
+    "lodash": "^3.10.1",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.0",
+    "react-redux": "^4.0.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-merge": "^0.3.2"
+  }
+}

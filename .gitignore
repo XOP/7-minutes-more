@@ -1,0 +1,27 @@
+# IDE
+.idea
+*.iml
+
+# Deps
+node_modules
+bower_components
+
+# Environment
+*.DS_Store
+*.log
+/log
+
+# Assets
+_design
+_tmp
+
+# Prototype
+/assets/app.old
+
+# Build
+*.zip
+public
+assets/sprites
+
+# Generated JSdoc
+/jsdoc
