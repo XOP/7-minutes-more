@@ -28,34 +28,43 @@
     </div>
     <!-- Content end -->
 
+    <!-- Header start -->
+    <header class="header js-header">
+        <nav class="header_nav">
+            <a href="/new/" class="header_link" title="{%= o.webpackConfig.locale.menu.new %}">{%= o.webpackConfig.locale.menu.new %}</a>
+            <a href="/settings/" class="header_link" title="{%= o.webpackConfig.locale.menu.settings %}">{%= o.webpackConfig.locale.menu.settings %}</a>
+        </nav>
+    </header>
+    <!-- Header end -->
+
     <!-- Menu start -->
     <div class="menu js-menu __active">
         <div class="menu_icon js-menu-trigger"></div>
         <div class="menu_content">
             <ul class="menu_list">
                 <li class="menu_item">
-                    <a href="#new" class="menu_link __new">
+                    <a href="/new/" class="menu_link __new" title="{%= o.webpackConfig.locale.menu.new %}">
                         <span class="menu_link_text">
                             {%= o.webpackConfig.locale.menu.new %}
                         </span>
                     </a>
                 </li>
                 <li class="menu_item">
-                    <a href="#library" class="menu_link __library">
+                    <a href="/library/" class="menu_link __library">
                         <span class="menu_link_text">
                             {%= o.webpackConfig.locale.menu.library %}
                         </span>
                     </a>
                 </li>
                 <li class="menu_item">
-                    <a href="#programs" class="menu_link __programs">
+                    <a href="/programs/" class="menu_link __programs">
                         <span class="menu_link_text">
                             {%= o.webpackConfig.locale.menu.programs %}
                         </span>
                     </a>
                 </li>
                 <li class="menu_item">
-                    <a href="#settings" class="menu_link __settings">
+                    <a href="/settings/" class="menu_link __settings">
                         <span class="menu_link_text">
                             {%= o.webpackConfig.locale.menu.settings %}
                         </span>

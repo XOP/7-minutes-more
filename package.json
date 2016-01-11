@@ -1,6 +1,6 @@
 {
   "name": "7-minutes-more",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "Hybrid fitness application",
   "main": "assets/app/index.js",
   "repository": {
@@ -36,6 +36,8 @@
     "normalize.css": "^3.0.3",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-router": "^1.0.3",
+    "react-redux": "^4.0.2",
     "redux": "^3.0.5",
     "xop-module-utils": "^0.1.0"
   },
@@ -53,13 +55,13 @@
     "eslint-plugin-react": "^3.11.1",
     "expect": "^1.13.3",
     "extract-text-webpack-plugin": "^0.9.1",
+    "history": "^1.17.0",
     "html-webpack-plugin": "^1.7.0",
     "imports-loader": "^0.6.5",
     "json-loader": "^0.5.4",
     "lodash": "^3.10.1",
     "node-sass": "^3.4.2",
     "postcss-loader": "^0.8.0",
-    "react-redux": "^4.0.2",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.9",

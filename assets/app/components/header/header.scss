@@ -1,0 +1,69 @@
+/* Header
+---------------------------------------------------------------------------------- */
+
+/*
+cssg
+
+	header
+	    header_nav
+	        header_link
+
+*/
+
+/* Vars
+-------------------------------------------------- */
+
+@import "../../../css/variables";
+
+
+/* /Vars */
+
+
+/* Layout
+-------------------------------------------------- */
+
+.header {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: $grid-2;
+
+    background: $c-brand;
+    color: $c-dark;
+
+    font-size: $fs-normal;
+}
+
+/* /Layout */
+
+
+/* Navigation
+-------------------------------------------------- */
+
+.header_nav {
+    display: flex;
+    flex-direction: row;
+}
+
+/* /Navigation */
+
+
+/* Item
+-------------------------------------------------- */
+
+.header_link {
+    flex: 1 0 auto;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: $c-dark;
+
+    &:hover {
+        color: $c-light;
+    }
+}
+
+/* /Item */
+
+/* /Header
+---------------------------------------------------------------------------------- */
