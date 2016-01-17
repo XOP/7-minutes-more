@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Jumping Jacks",
+        "graphics": "factory/jumpingJacks.png",
+        "level": 1,
+        "split": false
+    },
+    {
+        "name": "Stand Ups",
+        "graphics": "factory/standUps.png",
+        "level": 1,
+        "split": true
+    },
+    {
+        "name": "Hindu Push-Ups",
+        "graphics": "factory/hinduPushups/png",
+        "level": 3,
+        "split": false
+    }
+]
