@@ -102,7 +102,7 @@ let config = {
 
     plugins: [],
     postcss: postCssPlugins,
-    debug: appConfig.core.debug,
+    debug: appConfig.dev.debug,
     locale: appConfig.locale[appConfig.core.language]
 };
 
@@ -159,7 +159,7 @@ if (!production) {
             inline: true,
             progress: true,
             stats: 'errors-only',
-            port: appConfig.core.port
+            port: appConfig.dev.port
         },
 
         plugins: [

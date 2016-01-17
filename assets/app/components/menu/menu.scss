@@ -36,12 +36,10 @@ cssg
 
 .menu {
     @include cover();
-    right: 10%;
 
     display: none;
 
     background: $tr-bg;
-    box-shadow: $sh-heavy;
 
     &.__active {
         display: flex;

@@ -6,10 +6,25 @@
 'use strict';
 
 var config = {
-    core: {
+    dev: {
         debug: true,
-        port: 4000,
+        port: 4000
+    },
+
+    core: {
         language: 'default'
+    },
+
+    duration: {
+        countdown: 10,
+        exercise: 30,
+        relax: 10
+    },
+
+    modules: {
+        basic: true,
+        library: true,
+        personal: true
     },
 
     locale: {

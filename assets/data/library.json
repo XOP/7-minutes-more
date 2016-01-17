@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Good Morning Monday",
+        "description": "Nice way to start a week",
+        "duration": {
+            "countdown": 10,
+            "exercise": 30,
+            "relax": 10
+        },
+        "training": {
+            "1": "Jumping Jacks",
+            "2": "Stand Ups"
+        }
+    }
+]
