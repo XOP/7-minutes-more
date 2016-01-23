@@ -24,7 +24,7 @@ var config = {
     modules: {
         basic: true,
         library: true,
-        personal: true
+        programs: true
     },
 
     locale: {

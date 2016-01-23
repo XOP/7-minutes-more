@@ -6,10 +6,14 @@
 import 'normalize.css/normalize.css';
 import './app.scss';
 
-import { browserHistory, Router, Route, Link } from 'react-router';
+import { Router, Route } from 'react-router';
 
-import 'components/header/Header';
-import 'components/menu/Menu';
+// import Header from 'components/header/Header';
+// import Menu from 'components/menu/Menu';
+
+import Intro from 'components/intro/Intro';
+import Programs from 'components/programs/Programs';
+import Library from 'components/library/Library';
 
 
 module.exports = React.createClass({
@@ -34,13 +38,19 @@ module.exports = React.createClass({
 
     render: function() {
         return (
-            <Router history={browserHistory}>
-                <Route path="/" component={App}>
-                    <Route path="library" component={About}/>
-                    <Route path="users" component={Users}>
-                        <Route path="/user/:userId" component={User}/>
-                    </Route>
-                    <Route path="*" component={NoMatch}/>
+            <Router>
+                <Route
+                    component={Intro}
+                    path="/"
+                    >
+                    <Route
+                        component={Programs}
+                        path="programs"
+                        />
+                    <Route
+                        component={Library}
+                        path="library"
+                        />
                 </Route>
             </Router>
         );

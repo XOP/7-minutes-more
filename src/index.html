@@ -5,11 +5,13 @@
     <title>{%= o.webpackConfig.locale.title %}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+<!--
     <style>
         #app {
             display: none;
             }
     </style>
+-->
 
     {% if (o.webpackConfig.debug != true) { %}
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -18,29 +20,23 @@
 </head>
 <body>
 
+<!--
 <div class="root">
 
-    <!-- Header start -->
     <header class="header js-header">
         <nav class="header_nav">
             <a href="/new/" class="header_link" title="{%= o.webpackConfig.locale.menu.new %}">{%= o.webpackConfig.locale.menu.new %}</a>
             <a href="/settings/" class="header_link" title="{%= o.webpackConfig.locale.menu.settings %}">{%= o.webpackConfig.locale.menu.settings %}</a>
         </nav>
     </header>
-    <!-- Header end -->
 
-
-    <!-- Content start -->
     <div class="main js-main">
         <div class="container">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid asperiores at atque commodi eaque illo in laboriosam libero odio possimus quae quam quis recusandae saepe sequi sit, soluta velit!
         </div>
     </div>
-    <!-- Content end -->
 
-
-    <!-- Menu start -->
-    <div class="menu js-menu __active">
+    <div class="menu js-menu">
         <div class="menu_icon js-menu-trigger"></div>
         <div class="menu_content">
             <ul class="menu_list">
@@ -75,9 +71,9 @@
             </ul>
         </div>
     </div>
-    <!-- Menu end -->
 
 </div>
+-->
 
 <div class="root" id="app">
     {%= o.webpackConfig.locale.loading %}

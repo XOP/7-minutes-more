@@ -36,8 +36,8 @@
     "normalize.css": "^3.0.3",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-router": "^1.0.3",
     "react-redux": "^4.0.2",
+    "react-router": "^1.0.3",
     "redux": "^3.0.5",
     "xop-module-utils": "^0.1.0"
   },
